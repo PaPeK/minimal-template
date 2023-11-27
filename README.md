@@ -20,7 +20,7 @@ short explanation of all files in the repo:
     * `test_with_pytest.py`: example file to test tesing via e.g. pytest
 * `env.yml`: YAML environment file than specifies dependencies from other packages
 * `LICENSE`: LICENSE File
-* `pyproject.toml`: contains the various settings (black, ruff, ...) for the project
+* `pyproject.toml`: contains dependencies and various settings (black, ruff, ...) for the project
 * `README.md`: the readme
 * `setup.py`: needed for install via pip
 
