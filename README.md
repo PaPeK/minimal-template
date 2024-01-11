@@ -44,8 +44,10 @@ I will update the package the more I understand of the other template files and 
 
 ### Git settings
 If you plan having jupyter-notebooks in your repository, place them in the [./notebooks](./notebooks) folder.
+The below settings are inspired by this [https://stackoverflow.com/posts/58004619/revisions](stackoverflow post) 
 * this folder contains the file [./notebooks/.gitattributes](./notebooks/.gitattributes) that will run at each add of an `*.ipynb` file the filter `strip-notebook-output`.
-* this filter needs to be defined in your local `.git/config` or global `.gitconfig` as:
+    * note that it will only remove the output for the git-commit BUT the output in your local notebook remains.
+* the filter `strip-notebook-output` needs to be defined in your local `.git/config` or global `.gitconfig` as:
 ```
 [filter "strip-notebook-output"]
     clean = "jupyter nbconvert --ClearOutputPreprocessor.enabled=True --to=notebook --stdin --stdout --log-level=ERROR"
