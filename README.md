@@ -3,10 +3,15 @@
 **template repo**
 
 ## Install
-0. optional: `conda env create -f env.yml`
+the `env.yml` contains the line `- -e .` which installs the package in developer mode: 
+1. optional: `conda env create -f env.yml`
+2. activate: `conda activate mini_template`
+
+alternative install it in your existing environment::
 1. normal: `python -m pip install .`
-OR
-1. **developer mode**: Install locally via `pip install -e . --user`
+OR in developer mode:
+1. `pip install -e . --user`
+
 
 ## How to use:
 * add some bullets here 
