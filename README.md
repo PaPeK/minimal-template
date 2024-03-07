@@ -59,10 +59,10 @@ I will update the package the more I understand of the other template files and 
 * if the package depends on a custum package `my_other_pack` that you want to edit during development
     1. specify it in the `env.yml` file (so users have it in their env)
     2. when doing `conda create -f env.yml` it will get installed via pip  (good for the users, bad for you since the path is somewhere in your env-directory)
-    3. now reinstall to your local repo fo `my_other_pack` by:
+    3. now reinstall with your local repo folder `my_other_pack` by:
         * activate environment `conda env create -f env.yml`
         * uninstall the package `pip uninstall my_other_pack`
-        * change directory to your local installation `cd /PATH/to/your/local/install/or/my_other_pack`
+        * change directory to your local installation `cd /PATH/to/your/local/my_other_pack`
         * pip-install it in editable mode: `pip install -e . --user`
 
 ### Git settings
