@@ -24,6 +24,24 @@ short explanation of all files in the repo:
 * `README.md`: the readme
 * `setup.py`: needed for install via pip
 
+## Dependencies
+
+* plotting related:
+    * **matplotlib**: used for plotting
+    * **plotly**: fast interactive plotting
+* jupyter notebook related:
+    * **ipykernel**: to be able to load the environment in jupyterlab
+    * **jupyterlab**: to run notebooks
+    * **jupyter_contrib_nbextensions**: to enable "strip-notebook-output clean"
+    * **nbconvert**: to enable "strip-notebook-output clean"
+* formatting + linting:
+    * **ruff**
+    * **pylint**
+* **numpy**: for numerical computations
+* **pathlib**: for a portable way to navigate file-systems
+* **pandas**: to use DataFrame objects 
+* **tabulate**: to create tables
+
 
 ## Explanation:
 I will update the package the more I understand of the other template files and functions (poetry, tox vs. pytest, black)
